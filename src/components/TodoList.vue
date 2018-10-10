@@ -37,7 +37,6 @@
   };
 </script>
 <style>
-
   #card-header {
     margin-top: 10px;
   }

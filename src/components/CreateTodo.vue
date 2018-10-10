@@ -43,6 +43,8 @@ export default {
     },
     closeForm() {
       this.isCreating = false;
+      this.titleText = ''
+      this.projectText = ''
     },
     sendForm() {
       if (this.titleText.length > 0 && this.projectText.length > 0) {
@@ -53,7 +55,8 @@ export default {
           project,
           done: false,
         });
-        this.newTodoText = '';
+        this.titleText = '';
+        this.projectText = ''
       }
       this.isCreating = false;
     },

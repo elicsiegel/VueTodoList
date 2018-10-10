@@ -20,7 +20,7 @@
       <div class='ui form'>
         <div class='field'>
           <label>Title</label>
-          <input type='text' v-model="todo.title" >
+          <input type='text' v-bind:value="todo.title" v-on:input="todo.title = $event.target.value" >
         </div>
         <div class='field'>
           <label>Project</label>
@@ -43,7 +43,6 @@
 </template>
 
 <script type = "text/javascript" >
-
   export default {
     props: ["todo"],
     data() {
